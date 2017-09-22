@@ -1,4 +1,4 @@
-package main;
+package main.java;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -226,8 +226,13 @@ public class TextRepeatUtils {
         }catch(FileNotFoundException e) {
             e.printStackTrace();
         }
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new InputStreamReader(fis, "UTF-8"));
+        }catch(UnsupportedEncodingException e){
+            e.printStackTrace();
+        }
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(fis));
         StringBuilder output = new StringBuilder();
         String line="";
 

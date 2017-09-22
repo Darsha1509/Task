@@ -1,4 +1,4 @@
-package main;
+package main.java;
 
 /*Creating class MyStack wich will allow to create the array like a stack(
 the ability to access only the last element of an array*/
